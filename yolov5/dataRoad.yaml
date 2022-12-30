@@ -1,0 +1,14 @@
+train: /Users/ashhadulislam/projects/other_misc/hagarr/project_medium/data/finalRoad/images/train
+val: /Users/ashhadulislam/projects/other_misc/hagarr/project_medium/data/finalRoad/images/val
+test: /Users/ashhadulislam/projects/other_misc/hagarr/project_medium/data/finalRoad/images/test
+nc: 9
+names: ['D00',
+        'D01',
+        'D10',
+        'D11',
+        'D20',
+        'D30',
+        'D40',
+        'D43',
+        'D44',        
+]
