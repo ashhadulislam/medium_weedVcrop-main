@@ -2,6 +2,8 @@ import streamlit as st
 
 import torch
 from yolov5 import detect
+from ultralytics import YOLO
+
 import os
 import shutil
 
