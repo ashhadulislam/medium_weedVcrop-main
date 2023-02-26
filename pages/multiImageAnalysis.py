@@ -46,11 +46,19 @@ def app():
         st.subheader("Detect crop and weed in multiple image")
         zip_file = st.file_uploader("Upload Zip file containing multiple images", type=["zip"])
 
-        
+        for dir in os.listdir(os.path.join("data","unzipped")):
+            if ".DS_Store" in dir:
+                continue
+
+            if os.path.isdir(os.path.join("data","unzipped",dir)):
+                shutil.rmtree(os.path.join("data","unzipped",dir))        
+            else:
+                os.remove(os.path.join("data","unzipped",dir))
+
 
         if zip_file is not None:
 
-            ts = str(time.time())
+            ts = str(time.time())            
             unzip_location=os.path.join("data","unzipped",ts)            
             if not os.path.isdir(unzip_location):
                 os.mkdir(unzip_location)                        
@@ -66,6 +74,9 @@ def app():
             
 
             ts = str(time.time())
+            
+            
+                
             unzip_location=os.path.join("data","unzipped",ts)            
             if not os.path.isdir(unzip_location):
                 os.mkdir(unzip_location)            
@@ -97,6 +108,14 @@ def app():
     with result_all:     
 
         # let us create a fodler to store the results
+        
+        for dir in os.listdir(os.path.join("data","results")):
+            if ".DS_Store" in dir:
+                continue
+            if os.path.isdir(os.path.join("data","results",dir)):
+                shutil.rmtree(os.path.join("data","results",dir))        
+            else:
+                os.remove(os.path.join("data","results",dir))
         results_location="data/results/"+ts
         if not os.path.isdir(results_location):
             os.mkdir(results_location)
