@@ -7,6 +7,8 @@ from PIL import  Image
 from multipage import MultiPage
 
 from pages import cropAnalysis
+
+from pages import multiImageAnalysis
 # Create an instance of the app 
 app = MultiPage()
 
@@ -24,6 +26,7 @@ st.text("Detect crops and weeds")
 
 # Add all your application here
 app.add_page("Crop Vs Weed", cropAnalysis.app)
+app.add_page("Process Many Images", multiImageAnalysis.app)
 # app.add_page("Detect Disaster Type", detectDisaster.app)
 
 

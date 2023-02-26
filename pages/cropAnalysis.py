@@ -4,6 +4,11 @@ import torch
 from yolov5 import detect
 from ultralytics import YOLO
 
+import cv2
+
+
+
+
 import os
 import shutil
 
@@ -54,5 +59,40 @@ def app():
         st.subheader("Crop and Weed Detections")    
         st.image(img,width=250)            
         
+        # for yolo8 versions
+        model_y8n = YOLO("yolov8/models/nano/best.pt") # pass any model type
+        results = model_y8n.predict(source=image_file, save=False, save_txt=False)  # save predictions as labels
+        res_plotted = results[0].plot()        
+        st.subheader("Yolov8 Nano Model")
+        st.image(res_plotted,width=250)            
+
+        model_y8s = YOLO("yolov8/models/small/best.pt") # pass any model type
+        results = model_y8s.predict(source=image_file, save=False, save_txt=False)  # save predictions as labels
+        res_plotted = results[0].plot()        
+        st.subheader("Yolov8 Small Model")
+        st.image(res_plotted,width=250)    
+
+
+        model_y8m = YOLO("yolov8/models/medium/best.pt") # pass any model type
+        results = model_y8m.predict(source=image_file, save=False, save_txt=False)  # save predictions as labels
+        res_plotted = results[0].plot()        
+        st.subheader("Yolov8 Medium Model")
+        st.image(res_plotted,width=250)    
+
+
+        model_y8l = YOLO("yolov8/models/large/best.pt") # pass any model type
+        results = model_y8l.predict(source=image_file, save=False, save_txt=False)  # save predictions as labels
+        res_plotted = results[0].plot()        
+        st.subheader("Yolov8 Large Model")
+        st.image(res_plotted,width=250)            
+
+        
+        
+
+
+
+
+
+
 
         

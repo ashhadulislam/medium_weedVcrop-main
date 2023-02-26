@@ -39,4 +39,5 @@ seaborn>=0.11.0
 # pycocotools>=2.0  # COCO mAP
 # roboflow
 thop  # FLOPs computation
+opencv-python==4.7.0.72
 ultralytics==8.0.40
