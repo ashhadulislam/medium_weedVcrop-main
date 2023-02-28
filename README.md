@@ -1,8 +1,9 @@
+
 # Welcome to Farm-Eye
 
  **Farm-Eye** is an AI based computer vision tool capable of identifying crops and weeds from images.
 
-![](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*HF_Bjk4gMPohESQggXaW7g.jpeg)
+![](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*HF_Bjk4gMPohESQggXaW7g.jpeg =250x250)
 
 
 # 01 Motivation
