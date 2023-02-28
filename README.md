@@ -10,6 +10,18 @@
 
 **Intel® oneAPI Hackathon for Open Innovation** is a recent [competition](https://www.hackerearth.com/challenges/hackathon/intel-oneapi-hackathon-for-open-innovation/) hosted by intel where we need to detect the regions in pictures of croplands where weeds are present. The product developed will be helpful for the targeted application of pesticides to get rid of weeds. Weeds are unwanted trespassers in the agricultural business. They deny the nutrients, water, land, and other critical resources to grow healthy crops. Weed can lead to lower yields and inefficient deployment of resources by farmers. Although pesticides are used to remove weeds, indiscriminate usage of pesticides creates health risks for humans. Let’s leverage computer vision and deep learning to detect the presence of weeds. This will enable targeted remediation techniques to remove them from fields with minimal environmental impact.
 
+
+# Welcome to Farm-Eye
+
+ **Farm-Eye** is an AI based computer vision tool capable of identifying crops and weeds from images.
+
+![](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*HF_Bjk4gMPohESQggXaW7g.jpeg)
+
+
+# 01 Motivation
+
+**Intel® oneAPI Hackathon for Open Innovation** is a recent [competition](https://www.hackerearth.com/challenges/hackathon/intel-oneapi-hackathon-for-open-innovation/) hosted by intel where we need to detect the regions in pictures of croplands where weeds are present. The product developed will be helpful for the targeted application of pesticides to get rid of weeds. Weeds are unwanted trespassers in the agricultural business. They deny the nutrients, water, land, and other critical resources to grow healthy crops. Weed can lead to lower yields and inefficient deployment of resources by farmers. Although pesticides are used to remove weeds, indiscriminate usage of pesticides creates health risks for humans. Let’s leverage computer vision and deep learning to detect the presence of weeds. This will enable targeted remediation techniques to remove them from fields with minimal environmental impact.
+
 # 02 Setup
 As we have used intelOneApi devcloud, you need to have a free account in intel OneApi. Here is the [link](https://www.intel.com/content/www/us/en/my-intel/sign-in.html?redirect=https://www.intel.com/content/www/us/en/forms/idz/devcloud-registration.html?tgt=https://www.intel.com/content/www/us/en/secure/forms/devcloud-enrollment/account-provisioning.html?eventcode=oneapiapjdec09).
 
@@ -407,3 +419,16 @@ Wouldn’t it be great if we could use this app in the web. We could just upload
 
 For a more detailed explanation of coding in streamlit, take a look at this  [article](https://pub.towardsai.net/deep-learning-a692669f6f42), and go to the section  _Hosting As a Streamlit Application (Locally and then in the cloud)._ The code follows a similar pattern and can be found in  [github](https://github.com/ashhadulislam/medium_weedVcrop-main)  and the running app can be found  [here](https://ashhadulislam-medium-weedvcrop-main-main-ppo37r.streamlit.app/).
 
+First we have shown how a single image can be processed by different yolo models and the corresponding results as shown in the gif below.
+
+![](https://miro.medium.com/max/1200/1*YJFfygi_4JR5fDdKNIhoEQ.gif)
+
+Single image processed by different yolov8 models
+
+However, you might need to upload a set of images and apply the models on them. In that case, it would be tedious to drag and drop every image one by one. Rather, we have another page in the same application where you can drag and drop a zip file containing multiple images.
+
+![](https://miro.medium.com/max/1200/1*0BDHmo-iISYYQWNHTa9qfg.gif)
+
+Processing zipped files
+
+You can even choose the from a list of models (yolov8 — nano, small, medium and large). You will get a zipped file containing folders corresponding to each model with a set of result in each.
