@@ -2,6 +2,9 @@
 
  **Farm-Eye** is an AI based computer vision tool capable of identifying crops and weeds from images.
 
+![](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*HF_Bjk4gMPohESQggXaW7g.jpeg)
+
+
 # 01 Motivation
 
 **Intel® oneAPI Hackathon for Open Innovation** is a recent [competition](https://www.hackerearth.com/challenges/hackathon/intel-oneapi-hackathon-for-open-innovation/) hosted by intel where we need to detect the regions in pictures of croplands where weeds are present. The product developed will be helpful for the targeted application of pesticides to get rid of weeds. Weeds are unwanted trespassers in the agricultural business. They deny the nutrients, water, land, and other critical resources to grow healthy crops. Weed can lead to lower yields and inefficient deployment of resources by farmers. Although pesticides are used to remove weeds, indiscriminate usage of pesticides creates health risks for humans. Let’s leverage computer vision and deep learning to detect the presence of weeds. This will enable targeted remediation techniques to remove them from fields with minimal environmental impact.
